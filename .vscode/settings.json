@@ -1,0 +1,11 @@
+{
+    "workbench.activityBar.iconClickBehavior": "focus",
+    "workbench.editor.autoLockGroups": {
+        "terminalEditor": false
+    },
+    "workbench.editor.closeEmptyGroups": true,
+    "workbench.editor.centeredLayoutAutoResize": false,
+    "window.closeWhenEmpty": false,
+    "window.title": "",
+    "accessibility.verbosity.diffEditor": true
+}
