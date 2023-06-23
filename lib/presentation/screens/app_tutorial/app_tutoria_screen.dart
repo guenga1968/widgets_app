@@ -33,11 +33,14 @@ class AppTutorialScreen extends StatelessWidget {
     return Scaffold(
       body: PageView(
         physics: const BouncingScrollPhysics(),
-        children: slides.map((slideData) => _Slide(
-            title: slideData.title,
-            caption: slideData.caption,
-            imageUrl: slideData.imageUrl),
-            ).toList(),
+        children: slides
+            .map(
+              (slideData) => _Slide(
+                  title: slideData.title,
+                  caption: slideData.caption,
+                  imageUrl: slideData.imageUrl),
+            )
+            .toList(),
       ),
     );
   }
@@ -52,6 +55,17 @@ class _Slide extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Padding(
+      padding: const EdgeInsets.all(8),
+      child: Center(
+        child: Column(
+          children: [
+            Image(
+              image: AssetImage(imageUrl),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
